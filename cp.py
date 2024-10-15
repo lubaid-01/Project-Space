@@ -20,7 +20,7 @@ def project():
     st.title("COLOR PICKER 🎨")
     st.subheader('''This model is supposed to analyse an image provided and tries to pick given number of most noticible colors. ''')
     n = st.sidebar.selectbox("Select no of colors", [3,4,5])
-    st.info('This model is still under work and will imprve with time')
+    st.info('This model is still under work and will improve with time')
     up_file = st.file_uploader("Upload an image here")
     
     if up_file is not None:
