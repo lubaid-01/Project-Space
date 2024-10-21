@@ -32,7 +32,7 @@ def project():
             arr = make_array(image)
 
             #fit model 
-            model = KMeans(n_clusters=n, n_init=10,init='k-means++')
+            model = KMeans(n_clusters=n, n_init=3,init='k-means++',tol = 0.1)
             pred = model.fit(arr)
             norm_centroids = pred.cluster_centers_ / 255 # for range 0-1
             st.write(f"Top {n} noticible colors")
