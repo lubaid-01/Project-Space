@@ -45,7 +45,7 @@ def project():
             st.write('RGB values are :')
             for i in [0,1,2]:
                 
-              st.write(f'{i+1} : ({pred.cluster_centers_[i][0]},{pred.cluster_centers_[i][1]},{pred.cluster_centers_[i][2]}) ')
+              st.write(f'{i+1} : ({pred.cluster_centers_[i][0]}, {pred.cluster_centers_[i][1]}, {pred.cluster_centers_[i][2]}) ')
 
         else :
             st.error("File type not supported!")
