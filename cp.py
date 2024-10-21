@@ -43,7 +43,6 @@ def project():
             fig.tight_layout(pad=0)
             st.pyplot(fig)
             st.write('RGB values are')
-            st.write(f'{pred.cluster_centers_}')
 
         else :
             st.error("File type not supported!")
