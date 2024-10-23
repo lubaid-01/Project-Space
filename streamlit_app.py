@@ -6,8 +6,8 @@ option = st.sidebar.selectbox('Select Project', ["None","Color Picker","Spam Cla
 
 if option == "None" :
     st.title("..MY PROJECT SPACE 🚀..")
-    st.subheader('''Hi user I have tailored this webpage to show my differnt project which I make out of curiosity..''')
-    st.markdown('''### Here you will find interstig projects related to: 
+    st.subheader('''Hi user I have tailored this webpage to show my different projects which I make out of curiosity..''')
+    st.markdown('''### Here you will find interesting projects related to: 
 - Machine Learning
 - Data Science 
 - Data Analytcs 
