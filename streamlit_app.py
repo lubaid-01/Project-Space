@@ -1,8 +1,7 @@
 import streamlit as st
 import webbrowser as wb
-
-#import cp
-#import spam
+import cp
+import spam
 option = st.sidebar.selectbox('Select Project', ["None","Color Picker","Spam Classifier", "IPL API"])
 
 
@@ -19,11 +18,11 @@ if option == "None" :
     st.link_button('GitHub', url='https://github.com/lubaid-01')
 
 if option == "Color Picker" :
-    #cp.project()
+    cp.project()
     st.write("Color Picker")
 
 if option == "Spam Classifier":
-    #spam.project()
+    spam.project()
     st.write("Spam Classifier")
 if option == "IPL API":
    wb.open_new_tab("https://ipl-api-ogdg.onrender.com")
