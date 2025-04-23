@@ -1,5 +1,5 @@
 import streamlit as st
-import webbrowser as wb
+import streamlit.components.v1 as components
 import cp
 import spam
 option = st.sidebar.selectbox('Select Project', ["None","Color Picker","Spam Classifier", "IPL API"])
@@ -25,4 +25,11 @@ if option == "Spam Classifier":
     spam.project()
     st.write("Spam Classifier")
 if option == "IPL API":
-   wb.open_new_tab("https://ipl-api-ogdg.onrender.com")
+    components.html(
+        """
+        <script>
+            window.open("https://ipl-api-ogdg.onrender.com", "_blank");
+        </script>
+        """,
+        height=0
+    )
