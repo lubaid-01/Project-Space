@@ -25,13 +25,14 @@ if option == "Spam Classifier":
     spam.project()
     st.write("Spam Classifier")
 if option == "IPL API":
-    if st.button("Go to IPL API"):
-        components.html(
-            """
-            <script>
-                window.open("https://ipl-api-ogdg.onrender.com", "_blank");
-            </script>
-            """,
-            height=0
-        )
+    st.markdown(
+        """
+        <a href="https://ipl-api-ogdg.onrender.com" target="_blank">
+            <button style="background-color:#4CAF50; color:white; padding:10px 20px; border:none; border-radius:5px;">
+                Go to IPL API
+            </button>
+        </a>
+        """,
+        unsafe_allow_html=True
+    )
 
