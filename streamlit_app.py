@@ -18,19 +18,20 @@ if option == "None" :
     st.link_button('GitHub', url='https://github.com/lubaid-01')
 
 if option == "Color Picker" :
-    #cp.project()
+    cp.project()
     st.write("Color Picker")
 
-#if option == "Spam Classifier":
-   # spam.project()
+if option == "Spam Classifier":
+    spam.project()
     st.write("Spam Classifier")
 if option == "IPL API":
-    components.html(
-        """
-        <script>
-            window.open("https://ipl-api-ogdg.onrender.com", "_blank");
-        </script>
-        """,
-        height=0
-    )
+    if st.button("Go to IPL API"):
+        components.html(
+            """
+            <script>
+                window.open("https://ipl-api-ogdg.onrender.com", "_blank");
+            </script>
+            """,
+            height=0
+        )
 
